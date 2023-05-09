@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-logout</title>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/registerstyle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Oleo+Script&family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,300&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-4 register d-flex flex-column justify-content-center align-items-center">
+                    <div class="register-body h-60  w-md-50 col-4 m-3 p-3 d-flex flex-column justify-content-evenly ">
+                        <div class="text-center p-3">
+                            <p class="title_name">Register</p>    
+                        </div>
+                        
+                        <form name="registerForm" method="post" action="#" onsubmit="return registerValidation()" class="register-form d-flex flex-column justify-content-center ">
+                            <div class="register_name d-flex flex-column justify-content-between mb-3 ">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name">
+                            </div>
+                            <div class="register_email d-flex flex-column justify-content-between mb-3">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div class="register_password d-flex flex-column justify-content-between mb-3">
+                                <label for="dob">Date of birth</label>
+                                <input type="date" name="dob" id="dob">
+                            </div>
+                            <div class="register_distination d-flex flex-column justify-content-between mb-3">
+                                <label for="distination">Distination</label>
+                                <input type="text" name="distination" id="distination">
+                            </div>
+                            
+                            
+                            <div class="register_std d-flex flex-column justify-content-between mb-3 ">
+                                <label for="education">Eduction</label>
+                                <input type="text" name="education" id="education">
+                            </div>
+
+                            <div class="register_email d-flex flex-column justify-content-between mb-3">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password">
+                            </div>
+                            <div class="register_email d-flex flex-column justify-content-between mb-3">
+                                <label for="email">Conform Password</label>
+                                <input type="password" name="c_password" id="c_password">
+                            </div>
+                            <div class="submit_btn m-3 text-center">
+                                <input type="submit" value="submit" class="p-2">
+                            </div>
+                        </form>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <footer></footer>
+
+    <script src="./assets/script/script.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

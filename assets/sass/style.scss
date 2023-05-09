@@ -1,0 +1,107 @@
+@import './mixins/breakpoints';
+@import './registerstyle.scss';
+*{
+    padding:0;
+    margin: 0;
+}
+body{
+    background-image: url('../../public/image/cool-background.png');
+    background-position: center;
+    background-size: cover;
+    .login{
+        
+        height: 100vh;
+        width:100%;
+        .login-body{
+            height: 60% !important;
+            width: 100%;
+            background: transparent;
+            z-index: 1;
+            border: 1px solid rgba(255,255,255,.25);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 5px 3px 5px  rgba(0,0,0,15);
+            @include media-min-md{
+                height: 70% !important;
+                
+            }
+            @include media-min-lg{
+                width: 30%;
+            }
+            .title_name{
+                font-size: 30px;
+                @include media-min-md{
+                    font-size: 50px;
+                }
+                @include media-min-lg{
+                    font-size: 30px;
+                }
+            }
+            .login-form{
+                @include media-min-md{
+                    padding: 15px;
+                }
+               label{  
+                color: #025091 !important;       
+                padding: 5px 0;
+                font-size: 20px;
+                color: #2c1a1a;
+                pointer-events: none;
+                transition: .5s;
+                @include media-min-md{
+                    font-size: 30px;
+                }
+                @include media-min-lg{
+                    font-size: 20px;
+                }
+               }
+               input{
+                width: 100%;
+                font-size: 15px;
+                color: #000;
+                border: none;
+                border-bottom: 1px solid #000;
+                outline: none;
+                background: transparent;
+                    @include media-min-md{
+                        width: 100%;
+                        font-size: 15px;
+                        padding: 10px 15px;
+                        margin-bottom: 30px;
+                    }
+                    @include media-min-lg{
+                        margin-bottom: 15px;
+                        padding: 4px 15px;
+                    }
+               }
+               input:focus~ label,input:valid~ label{
+                    top: 20px;
+                    left: 0;
+                    color: #03e9f4;
+                    font-size: 12px;
+                    background: transparent;
+                    font-size: 30px;
+                }
+                .submit_btn{
+                    input{
+                        font-size: 15px !important;
+                        color: #fff;
+                        border-radius: 10px;
+                        background-color: #025091;
+                        border: none;
+                        box-shadow: 5px 3px 5px  rgba(0,0,0,1);
+                        @include media-min-md{
+                            font-size: 30px !important;
+                        }
+                        @include media-min-lg{
+                            font-size: 20px !important;
+                            padding: 10px 15px !important;
+                        }
+                    }
+                    
+                }
+            }
+        }
+       
+    }
+}
